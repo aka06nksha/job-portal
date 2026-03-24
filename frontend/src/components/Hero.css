@@ -1,0 +1,87 @@
+.hero {
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px var(--primary-glow));
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-weight: 500;
+}
+
+.filter-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+}
+
+.filter-label {
+  font-weight: 800;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.filter-chips {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-chip {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-muted);
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.filter-chip:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--primary);
+  color: white;
+  transform: translateY(-5px);
+}
+
+.filter-chip.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 0 25px var(--primary-glow);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}

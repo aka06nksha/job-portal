@@ -1,0 +1,87 @@
+.job-card {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.job-header h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: white;
+}
+
+.job-header .company {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  display: block;
+  filter: drop-shadow(0 0 5px var(--primary-glow));
+}
+
+.job-details {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.description {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 35px;
+  flex-grow: 1;
+}
+
+.job-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-btn {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  color: var(--primary);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.icon-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.btn-applied {
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+  flex: 1;
+  justify-content: center;
+}
+
+.job-card .btn-primary {
+  flex: 1;
+}

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: job-portal-antigravity
+    name: AstroHire-Portal
     env: node
     plan: free
     region: oregon

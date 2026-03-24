@@ -9,7 +9,7 @@ services:
       - key: NODE_VERSION
         value: 18.0.0
       - key: ADZUNA_APP_ID
-        fromConfig: cb0cca60
+        value: cb0cca60
       - key: ADZUNA_APP_KEY
-        fromConfig: dcc7279638a2473e82b4312ddb0cf0a7
+        value: dcc7279638a2473e82b4312ddb0cf0a7
     healthCheckPath: /api/health

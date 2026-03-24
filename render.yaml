@@ -3,13 +3,14 @@ services:
     name: job-portal-antigravity
     env: node
     plan: free
-    buildCommand: npm run build
-    startCommand: npm start
+    region: oregon
+    buildCommand: "npm run build"
+    startCommand: "npm start"
     envVars:
       - key: NODE_VERSION
-        value: 18.0.0
+        value: "18.0.0"
       - key: ADZUNA_APP_ID
-        value: cb0cca60
+        value: "cb0cca60"
       - key: ADZUNA_APP_KEY
-        value: dcc7279638a2473e82b4312ddb0cf0a7
+        value: "dcc7279638a2473e82b4312ddb0cf0a7"
     healthCheckPath: /api/health
